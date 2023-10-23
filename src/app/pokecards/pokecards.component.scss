@@ -1,0 +1,73 @@
+.cards-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  padding: 50px;
+}
+
+.card-container {
+    --dark-grey: #353535;
+    --middle-grey: #767676;
+    --lightest-grey: linear-gradient(#fafafa,#ebebeb);
+    --shadow: 0 5px 15px 0 #00000026;
+    --shadow-active: 0 5px 5px 0 #00000026;
+    --border-radius-main: 10px;
+    --border-radius-icon: 50px;
+    position: relative;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    cursor: default;
+    color: var(--dark-grey);
+    opacity: .9;
+    padding: 1.5rem;
+    font-weight: 600;
+    background: var(--lightest-grey);
+    border-radius: var(--border-radius-main);
+    box-shadow: var(--shadow);
+    transition: .2s ease all;
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+  }
+  
+  .card-container:hover {
+    box-shadow: var(--shadow-active);
+  }
+  
+  .card-container .pokeName {
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+    font-size: 30px;
+    line-height: 1.6;
+    cursor: pointer;
+  }
+  
+  .card-container .img{
+    width: 80px;
+    height: 75px;
+    position: relative;
+    // top: -60px;
+}
+
+.dexEntry{
+
+}
+
+.type-container{
+    margin-top : 1.5rem;
+}
+
+.pokeType{
+    font-size: 1rem;
+	border-radius: 100rem;
+    margin-top: 1rem;
+    padding: 10px 25px;    
+	background-color: yellow;    color : rgb(59, 59, 3);
+	font-weight: bold;
+    border: #000000 1px solid;
+    margin-left:2px;
+    margin-right:2px;
+}
